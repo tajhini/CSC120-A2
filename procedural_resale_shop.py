@@ -16,7 +16,7 @@ from typing import Dict, Union, Optional
     The value is another dictionary containing information about the machine
 """
 inventory : Dict[int, Dict[str, Union[str, int, bool]]] = {}
-
+# inventory : Dict[int, Dict[str, Union[str, int, bool]]] = {}
 itemID = 0 # We'll increment this every time we add a new item 
            # so that we always have a new value for the itemID
 
@@ -63,6 +63,7 @@ def print_inventory():
             print(f'Item ID: {item_id} : {inventory[item_id]}')
     else:
         print("No inventory to display.")
+        
 
 def refurbish(item_id: int, new_os: Optional[str] = None):
     if item_id in inventory:
