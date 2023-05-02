@@ -1,4 +1,7 @@
-#creates a base class for the computer objects
+
+"""
+    Creates a base class for the computer objects
+"""
 class Computer:
     #declaration of the data types
     description: str
@@ -18,11 +21,15 @@ class Computer:
         self.year_made = year_made
         self.price = price
 
-    """
-    Takes in specifications about a computer and returns a dictionary with 
-    the key describring the type of specification the value is.
-    """
+    
     def create_comp_dict(self) -> dict:
+        """
+        Takes in specifications about a computer and returns a dictionary with 
+        the key describring the type of specification the value is.
+
+        :return : (dict) a dictionary containing the specifications of the computer
+  
+        """
         return {'description': self.description,
             'processor_type': self.processor_type,
             'hard_drive_capacity': self.hard_drive_capacity,

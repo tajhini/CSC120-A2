@@ -1,3 +1,4 @@
+
 # Import a few useful containers from the typing module
 from typing import Dict, Union
 # Import the class and method needed to create the computer
@@ -54,7 +55,7 @@ def main():
     new_OS = "MacOS Monterey"
     print("Refurbishing Item ID:", computer_id_1, ", updating OS to", new_OS)
     print("Updating inventory...")
-    ComputerCo.refurbish(1, new_OS)
+    ComputerCo.refurbish(0, new_OS)
     print("Done.\n")
 
     # Updating the price
@@ -70,7 +71,7 @@ def main():
     
     # Now, let's sell it!
     print("Selling Item ID:", computer_id_1)
-    ComputerCo.sell(1)
+    ComputerCo.sell(0)
     
     # Make sure it worked by checking inventory
     print("Checking inventory...")
